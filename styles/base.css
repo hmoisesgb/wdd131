@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 
 body{
-    font-family: 'Rubik', sans-serif;
     font-weight: 300;
 }
 
@@ -34,7 +34,6 @@ nav ul{
 nav ul li{
     display: block;
     flex: 1 1 100%;
-    font-family: 'Rubik', sans-serif;
     font-weight: 300;
 }
 nav a
