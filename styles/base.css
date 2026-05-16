@@ -13,17 +13,16 @@ header{
     background-color: #2869a7;
     color: #fff;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.65rem;
+    padding-top: 1rem;
 }
 #course-title{
+    text-align: center;
     font-size: 1.5rem;
     font-weight: 500;
 }
 
 nav{
+    margin-top: 1rem;
     background-color: #077f94;
     color: #fff;
 }
