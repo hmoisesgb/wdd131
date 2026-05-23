@@ -1,0 +1,30 @@
+@media only screen and (min-width: 40em) {
+    header{
+        padding: 1rem 2rem;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    nav{
+        position: static;
+        width: auto;
+        background-color: transparent;
+    }
+
+    .navigation{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .navigation li{
+        display: block;
+    }
+
+    .navigation a{
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+    }
+}
