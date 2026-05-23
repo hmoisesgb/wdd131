@@ -8,9 +8,11 @@
     }
 
     nav{
+        display: flex;
+        align-items: center;
+        background-color: #2869a7;
         position: static;
         width: auto;
-        background-color: transparent;
     }
 
     .navigation{

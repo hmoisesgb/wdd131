@@ -19,7 +19,7 @@ header{
     position: relative;
 }
 
-header h1{
+header p{
     font-size: 1.8rem;
     font-weight: 500;
 }
