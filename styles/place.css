@@ -94,11 +94,6 @@ footer #lastModified {
     font-size: 0.9rem;
 }
 
-.weatherEmoji {
-    display: none;
-}
-
-
 @media screen and (min-width: 900px) {
 
     body {
@@ -205,10 +200,9 @@ footer #lastModified {
         padding: 1.5rem;
         font-size: 1rem;
     }
-    
-    .weatherEmoji {
-        display: inline;
+
+    .weatherHeading::after {
+        content: " ⛅";
         font-size: 1.8rem;
-        margin-left: 0.5rem;
     }
 }
