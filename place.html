@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Haroldo Moises Gonzalez Benavente. Country webpage activity.">
+    <meta name="author" content="Haroldo Gonzalez">
+    <title>Country Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/places.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Guatemala</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/tikal-guatemala-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/tikal-guatemala-medium.webp" media="(min-width: 500px)">
+                <img src="images/tikal-guatemala-small.webp" alt="Small picture of tikal ruins in Guatemala">
+            </picture>
+        </div>
+        <div class="container">
+            <div class="dataCard">
+                <h2>Data</h2>
+                <div class="cardContent">
+                    <p><strong>Area:</strong> 108,889 sq km</p>
+                    <p><strong>Population:</strong> 18,564,046</p>
+                    <p><strong>Capital:</strong> Guatemala City</p>
+                    <p><strong>Languages:</strong> Spanish, Quiche, Quekchi</p>
+                    <p><strong>Currency:</strong> Quetzal</p>
+                    <p><strong>Time Zone:</strong> UTC-6</p>
+                    <p><strong>Calling Code:</strong> +502</p>
+                    <p><strong>Internet TLD:</strong> .gt</p>
+                </div>
+            </div>
+            <div class="weatherCard">
+                <h2>Weather <span class="weatherEmoji">⛅</span></h2>
+                <picture>
+                    <img src="images/weather.svg" alt="Weather Icon">
+                </picture>
+                <div class="weatherData">
+                    <p><strong>Temperature:</strong> 24 °C</p>
+                    <p><strong>Conditions:</strong> Light Rain</p>
+                    <p><strong>Wind:</strong> 11 km/h</p>
+                    <p id="windChill"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Haroldo Moises Gonzalez Benavente - Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
