@@ -20,7 +20,7 @@
     <form action="review.html" method="get" id="reviewForm">
         <label for="pName">Product Name</label>
         <select name="product" id="pName" required>
-            <option value="1" disabled selected>Select a Product...</option>
+            <option value="" disabled selected>Select a Product...</option>
         </select>
         <fieldset class="rating-group">
             <legend>Overall Rating</legend>
@@ -28,16 +28,16 @@
             <input type="radio" name="rating" id="1" required>
             <label for="1">&star;</label>
 
-            <input type="radio" name="rating" id="2">
+            <input type="radio" name="rating" id="2" required>
             <label for="2">&star;&star;</label>
 
-            <input type="radio" name="rating" id="3">
+            <input type="radio" name="rating" id="3" required>
             <label for="3">&star;&star;&star;</label>
 
-            <input type="radio" name="rating" id="4">
+            <input type="radio" name="rating" id="4" required>
             <label for="4">&star;&star;&star;&star;</label>
 
-            <input type="radio" name="rating" id="5">
+            <input type="radio" name="rating" id="5" required>
             <label for="5">&star;&star;&star;&star;&star;</label>
         </fieldset>
         <label for="iDate">Date of Installation</label>
