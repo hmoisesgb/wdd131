@@ -138,3 +138,30 @@ footer {
 footer #lastModified {
     color: #ffe2a8;
 }
+
+@media screen and (min-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        max-width: 700px;
+        margin: 2rem auto;
+        padding: 2rem;
+    }
+
+    .review-message {
+        max-width: 700px;
+        margin: 3rem auto;
+    }
+
+    button {
+        width: 50%;
+        align-self: center;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
