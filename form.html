@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Haroldo Moises Gonzalez Benavente. Product Review Form">
+    <meta name="author" content="Haroldo Gonzalez">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <form action="review.html" method="get" id="reviewForm">
+        <label for="pName">Product Name</label>
+        <select name="product" id="pName" required>
+            <option value="1" disabled selected>Select a Product...</option>
+        </select>
+        <fieldset class="rating-group">
+            <legend>Overall Rating</legend>
+
+            <input type="radio" name="rating" id="1" required>
+            <label for="1">&star;</label>
+
+            <input type="radio" name="rating" id="2">
+            <label for="2">&star;&star;</label>
+
+            <input type="radio" name="rating" id="3">
+            <label for="3">&star;&star;&star;</label>
+
+            <input type="radio" name="rating" id="4">
+            <label for="4">&star;&star;&star;&star;</label>
+
+            <input type="radio" name="rating" id="5">
+            <label for="5">&star;&star;&star;&star;&star;</label>
+        </fieldset>
+        <label for="iDate">Date of Installation</label>
+        <input type="date" name="installationDate" id="iDate" required>
+        <fieldset class="features">
+            <legend>Which features did you find useful in the product?</legend>
+            <p>(Check all that apply)</p>
+
+            <div class="checkbox-item">
+                <input type="checkbox" id="pDurability" name="durability">
+                <label for="pDurability">Durability</label>
+            </div>
+
+            <div class="checkbox-item">
+                <input type="checkbox" id="pEase" name="ease">
+                <label for="pEase">Ease of Use</label>
+            </div>
+
+            <div class="checkbox-item">
+                <input type="checkbox" id="pPerformance" name="performance">
+                <label for="pPerformance">Performance</label>
+            </div>
+
+            <div class="checkbox-item">
+                <input type="checkbox" id="pDesign" name="design">
+                <label for="pDesign">Design</label>
+            </div>
+        </fieldset>
+        <label for="wReview">Written Review (optional)</label>
+        <textarea name="writtenReview" id="wReview"></textarea>
+        <label for="uName">User Name (optional)</label>
+        <input type="text" name="userName" id="uName">
+        <button type="submit" value="get">Post Review</button>
+    </form>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Haroldo Moises Gonzalez Benavente - Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #2869a7;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+form {
+    background-color: white;
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+label {
+    font-weight: 500;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.rating-group {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.rating-group legend {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.features {
+    border: none;
+    padding: 0;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.25rem 0;
+}
+
+button {
+    background-color: #2869a7;
+    color: white;
+    border: none;
+    padding: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #1f5688;
+}
+
+.review-message {
+    max-width: 700px;
+    margin: 3rem auto;
+    background: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.review-message h1 {
+    margin-bottom: 1rem;
+    color: #2869a7;
+}
+
+.review-message a {
+    text-decoration: none;
+    color: #2869a7;
+    font-weight: bold;
+}
+
+.review-message a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #2869a7;
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+}
+
+footer #lastModified {
+    color: #ffe2a8;
+}
