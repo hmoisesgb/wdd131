@@ -17,61 +17,63 @@
     <header>
         <h1>Product Review</h1>
     </header>
-    <form action="review.html" method="get" id="reviewForm">
-        <label for="pName">Product Name</label>
-        <select name="product" id="pName" required>
-            <option value="" disabled selected>Select a Product...</option>
-        </select>
-        <fieldset class="rating-group">
-            <legend>Overall Rating</legend>
+    <main>
+        <form action="review.html" method="get" id="reviewForm">
+            <label for="pName">Product Name</label>
+            <select name="product" id="pName" required>
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
+            <fieldset class="rating-group">
+                <legend>Overall Rating</legend>
 
-            <input type="radio" name="rating" id="r1" value="1" required>
-            <label for="r1">&star;</label>
+                <input type="radio" name="rating" id="r1" value="1" required>
+                <label for="r1">&star;</label>
 
-            <input type="radio" name="rating" id="r2" value="2" required>
-            <label for="r2">&star;&star;</label>
+                <input type="radio" name="rating" id="r2" value="2" required>
+                <label for="r2">&star;&star;</label>
 
-            <input type="radio" name="rating" id="r3" value="3" required>
-            <label for="r3">&star;&star;&star;</label>
+                <input type="radio" name="rating" id="r3" value="3" required>
+                <label for="r3">&star;&star;&star;</label>
 
-            <input type="radio" name="rating" id="r4" value="4" required>
-            <label for="r4">&star;&star;&star;&star;</label>
+                <input type="radio" name="rating" id="r4" value="4" required>
+                <label for="r4">&star;&star;&star;&star;</label>
 
-            <input type="radio" name="rating" id="r5" value="5" required>
-            <label for="r5">&star;&star;&star;&star;&star;</label>
-        </fieldset>
-        <label for="iDate">Date of Installation</label>
-        <input type="date" name="installationDate" id="iDate" required>
-        <fieldset class="features">
-            <legend>Which features did you find useful in the product?</legend>
-            <p>(Check all that apply)</p>
+                <input type="radio" name="rating" id="r5" value="5" required>
+                <label for="r5">&star;&star;&star;&star;&star;</label>
+            </fieldset>
+            <label for="iDate">Date of Installation</label>
+            <input type="date" name="installationDate" id="iDate" required>
+            <fieldset class="features">
+                <legend>Which features did you find useful in the product?</legend>
+                <p>(Check all that apply)</p>
 
-            <div class="checkbox-item">
-                <input type="checkbox" id="pDurability" name="durability">
-                <label for="pDurability">Durability</label>
-            </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="pDurability" name="durability">
+                    <label for="pDurability">Durability</label>
+                </div>
 
-            <div class="checkbox-item">
-                <input type="checkbox" id="pEase" name="ease">
-                <label for="pEase">Ease of Use</label>
-            </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="pEase" name="ease">
+                    <label for="pEase">Ease of Use</label>
+                </div>
 
-            <div class="checkbox-item">
-                <input type="checkbox" id="pPerformance" name="performance">
-                <label for="pPerformance">Performance</label>
-            </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="pPerformance" name="performance">
+                    <label for="pPerformance">Performance</label>
+                </div>
 
-            <div class="checkbox-item">
-                <input type="checkbox" id="pDesign" name="design">
-                <label for="pDesign">Design</label>
-            </div>
-        </fieldset>
-        <label for="wReview">Written Review (optional)</label>
-        <textarea name="writtenReview" id="wReview"></textarea>
-        <label for="uName">User Name (optional)</label>
-        <input type="text" name="userName" id="uName">
-        <button type="submit" value="get">Post Review</button>
-    </form>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="pDesign" name="design">
+                    <label for="pDesign">Design</label>
+                </div>
+            </fieldset>
+            <label for="wReview">Written Review (optional)</label>
+            <textarea name="writtenReview" id="wReview"></textarea>
+            <label for="uName">User Name (optional)</label>
+            <input type="text" name="userName" id="uName">
+            <button type="submit" value="get">Post Review</button>
+        </form>
+    </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> Haroldo Moises Gonzalez Benavente - Guatemala</p>
         <p id="lastModified"></p>
